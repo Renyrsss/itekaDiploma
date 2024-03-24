@@ -1,0 +1,144 @@
+.shops {
+    color: white;
+}
+
+.container {}
+
+.shops__row {
+    display: flex;
+}
+
+.shops__column {
+    
+}
+
+.shops__nav {
+    padding: 100px 50px;
+}
+.shops__nav li {
+    margin-bottom: 15px;
+}
+.shops__nav p {
+    margin-bottom: 20px;
+}
+.shops__nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+.shops__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.shops__item {
+    padding-top: 20px;
+    min-width: 200px;
+    flex: 0 0 25%;
+    text-align: center;
+    border: 2px solid rebeccapurple;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.shops__itemImg {
+    margin: 0 auto;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+}
+.shops__itemImg img{
+    object-fit: cover;
+    object-position: center;
+}
+
+.shops__itemText {
+    margin-bottom: 20px;
+}
+
+.shops__itemPrice {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.shops__itemBody{
+    display: none;
+}
+.price__a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(182, 173, 173, 0.5);
+    display: flex;
+}
+
+.modal__item {
+    width: 50%;
+    margin: auto auto;
+    background-color: rgba(19, 19, 19, 0.86);
+    border-radius: 10px;
+    padding: 50px;
+}
+
+.modal__img {
+    width: 400px;
+    height: 240px;
+    background-color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.modal__title {
+    text-align: center;
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.modal__des {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.modal__price{
+    display: flex;
+    justify-content: center;
+}
+.modal__price p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rebeccapurple;
+}
+
+.modal__close{
+    background-color: red;
+    display: inline-block;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.nav ul li a {
+    text-decoration: none;
+}

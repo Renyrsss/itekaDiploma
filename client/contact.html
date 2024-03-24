@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__img">
+                        <img src="" alt="">
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li>Home </li>
+                            <li>about</li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__phone">
+                        <p>8 777 777 77 77</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <sectoin class="infoAboutContact">
+            <div class="container">
+                <div class="infoAboutContact__row">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia eius sequi vel quis! Voluptate totam ea nemo debitis fugit dolore provident non, corrupti quae fugiat deleniti commodi placeat quia asperiores.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tempore delectus numquam eveniet. Accusantium ipsam incidunt ipsa facere voluptatem magnam eius? Aut consectetur quo, fugit beatae iusto molestias qui. Eos.</p>
+                </div>
+            </div>
+        </sectoin>
+
+        <div class="section">
+            <div class="container">
+                <div class="section__row" style="margin:100px 0px ; border-radius: 10px;">
+
+                    <body>
+                        <div id="map" style="width:100%; height:400px"></div>
+                    </body>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <p style="color: white; text-align: center; font-size: 20px; padding: 50px 0;">Powered by renyssss
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.186034, 71.409948],
+                zoom: 15
+            });
+
+            DG.marker([51.186034, 71.409948]).addTo(map);
+        });
+    </script>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

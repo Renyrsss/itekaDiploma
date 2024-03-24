@@ -1,0 +1,200 @@
+@import 'null.css';
+@import 'header.css';
+@import 'main.css';
+@import 'sectionText.css';
+@import 'shops.css';
+
+li{
+    list-style-type: none;
+}
+body {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: blue orange;
+    /* scroll thumb and track */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00001E;
+    height: 100%;
+}
+
+.wrapper {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.main {
+    background: url('../images/bg_anim1.png') 0 0 / contain no-repeat;
+    padding: 100px 0;
+
+}
+
+.main__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.backImg1 {
+    position: absolute;
+    right: 100px;
+    width: 100px;
+    top: -100px;
+    transform: translate(var(--move-xS), var(--move-yS));
+}
+
+.backImg2 {
+    position: absolute;
+    right: 400px;
+    width: 100px;
+    top: -100px;
+    transform: translate(var(--move-xS), var(--move-yS));
+}
+
+.backImg3 {
+    position: absolute;
+    left: 500px;
+    width: 100px;
+    bottom: 140px;
+    transform: translate(var(--move-xS), var(--move-yS));
+}
+
+.backImg4 {
+    position: absolute;
+    right: 50px;
+    width: 120px;
+    bottom: -100px;
+    transform: translate(var(--move-xS), var(--move-yS));
+    z-index: 100;
+}
+
+.main__text {
+    color: white;
+    width: 700px;
+
+}
+
+.main__title {
+    font-size: 50px;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.main__subTitle {
+    font-size: 24px;
+    margin-bottom: 50px;
+    text-wrap: balance;
+}
+
+.main__btn button {
+    font-size: 20px;
+    background-color: rgb(34, 62, 218);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 35px;
+    cursor: pointer;
+    transition: transform 0.4s ease 0s;
+}
+
+.main__btn button:hover {
+    transform: scale(1.05);
+}
+
+.main__images {}
+
+.main__imgPerson {
+    position: relative;
+
+
+}
+
+.main__imgPerson img {
+    transform: translate(var(--move-x), var(--move-y));
+    width: 400px;
+}
+
+
+/* --------------------------------------------------------- */
+.linkToPdf {
+    background-color: rgba(218, 218, 218, 0.4);
+    border-radius: 9px;
+    height: 450px;
+    overflow: scroll;
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: blue orange;
+    /* scroll thumb and track */
+}
+
+.linkToPdf li {
+
+    transition: all 0.5s ease 0s;
+    margin-bottom: 15px;
+    /* padding-left: 20px; */
+    margin-left: 20px;
+    color: white;
+}
+
+.linkToPdf a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    /* padding: 10px 0 20px 0px; */
+
+    /* margin-left: 40px; */
+
+}
+
+.linkToPdf li:hover {
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+
+#inputSearch {
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 9px;
+}
+
+
+
+
+.infoAboutContact {}
+
+.container {}
+
+.infoAboutContact__row {
+    margin-top: 100px;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.footer {
+    background-color: rgb(139, 67, 211);
+}
+
+.container {}
+
+.footer__row {}

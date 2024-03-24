@@ -1,0 +1,11 @@
+
+
+
+
+.main__img img {
+    /* position: absolute; */
+    /* right: 100px; */
+    width:400px;
+    /* top: -100px; */
+    transform: translate(var(--move-xS), var(--move-yS));
+}

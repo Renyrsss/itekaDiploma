@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__img">
+                        <img src="" alt="">
+                    </div>
+                    <nav class="nav">
+                        <ul >
+                            <li>Home </li>
+                            <li>about</li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="header__phone">
+                        <p>8 777 777 77 77</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="main">
+            <div class="container">
+                <div class="main__row">
+                    <div class="main__text">
+                        <div class="main__title">
+                            <p>Lorem ipsum dolor sit </p>
+                        </div>
+                        <div class="main__subTitle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facilis esse perferendis velit quos nulla. Libero ducimus, veniam eum nobis at ab praesentium accusantium, ea maiores voluptates suscipit voluptatibus laborum!</p>
+                        </div>
+                        <div class="main__btn">
+                            <button>Press me </button>
+                        </div>
+                    </div>
+
+                    <div class="main__img">
+                        <img src="./img/Р1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+
+        <section class="infoAbout">
+            <div class="container">
+                <div class="infoAbout__row">
+                    <div class="infoAbout__column">
+                        <div class="infoAbout__img">
+                            <img src="./img/Рисунок4.png" alt="">
+                        </div>
+
+                        <div class="infoAbout__textTitle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi, ducimus numquam aliquid provident consequatur eum sint possimus culpa unde debitis pariatur dolorum repellendus excepturi doloribus distinctio eveniet reprehenderit sapiente.</p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="infoAbout__column">
+                        <div class="infoAbout__img">
+                            <img src="./img/Рисунок4.png" alt="">
+                        </div>
+
+                        <div class="infoAbout__textTitle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi, ducimus numquam aliquid provident consequatur eum sint possimus culpa unde debitis pariatur dolorum repellendus excepturi doloribus distinctio eveniet reprehenderit sapiente.</p>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="infoAbout__column">
+                        <div class="infoAbout__img">
+                            <img src="./img/Рисунок4.png" alt="">
+                        </div>
+
+                        <div class="infoAbout__textTitle">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis commodi, ducimus numquam aliquid provident consequatur eum sint possimus culpa unde debitis pariatur dolorum repellendus excepturi doloribus distinctio eveniet reprehenderit sapiente.</p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="callBack">
+            <div class="container">
+                <div class="callBack__row">
+                    <div class="callBack__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia iste ipsum architecto recusandae voluptates laboriosam odit quo totam, eius accusamus, assumenda laborum harum libero soluta odio provident reprehenderit esse ut.</p>
+                        <div class="main__btn">
+                            <button>Press me </button>
+                        </div>
+                    </div>
+
+                    <div class="callBack__img">
+                        <img src="./img/Рисунок3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section">
+            <div class="container">
+                <div class="section__row" style="margin:100px 0px ; border-radius: 10px;">
+                    <body >
+                        <div id="map" style="width:100%; height:400px"></div>
+                    </body>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__row">
+                    <p style="color: white; text-align: center; font-size: 20px; padding: 50px 0;">Powered by renyssss</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [51.186034, 71.409948],
+                zoom: 15
+            });
+
+            DG.marker([51.186034, 71.409948]).addTo(map);
+        });
+    </script>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+.header{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header__row{
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+    color: white;
+    justify-content: space-between
+}
+
+nav{
+
+    
+}
+
+nav ul {
+    display: flex;
+    
+}
+nav ul li{
+    margin-right: 24px;
+    cursor: pointer;
+    
+    
+}
+nav ul li a {
+    color: white;
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
+
+
+.header__img img {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 100%;
+}
