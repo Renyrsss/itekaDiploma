@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bol_i_vospolenies",
+  "info": {
+    "singularName": "bol-i-vospolenie",
+    "pluralName": "bol-i-vospolenies",
+    "displayName": "Боль и восполение"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productname": {
+      "type": "string"
+    },
+    "productBody": {
+      "type": "text"
+    },
+    "productPrice": {
+      "type": "string"
+    },
+    "productImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "productDes": {
+      "type": "string"
+    }
+  }
+}

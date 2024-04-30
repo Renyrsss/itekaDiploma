@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prostuda_nasmork_bol_v_gorles",
+  "info": {
+    "singularName": "prostuda-nasmork-bol-v-gorle",
+    "pluralName": "prostuda-nasmork-bol-v-gorles",
+    "displayName": "Простуда , насморк , боль в горле"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productname": {
+      "type": "string"
+    },
+    "productBody": {
+      "type": "text"
+    },
+    "productPrice": {
+      "type": "string"
+    },
+    "productImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "productDes": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lechebnye_mazis",
+  "info": {
+    "singularName": "lechebnye-mazi",
+    "pluralName": "lechebnye-mazis",
+    "displayName": "лечебные мази"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productname": {
+      "type": "string"
+    },
+    "productBody": {
+      "type": "text"
+    },
+    "productPrice": {
+      "type": "string"
+    },
+    "productImg": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "productDes": {
+      "type": "string"
+    }
+  }
+}

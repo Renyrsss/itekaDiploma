@@ -362,41 +362,6 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiProductProduct extends Schema.CollectionType {
-  collectionName: 'products';
-  info: {
-    singularName: 'product';
-    pluralName: 'products';
-    displayName: '\u041B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u0430';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    productname: Attribute.String;
-    productBody: Attribute.Text;
-    productPrice: Attribute.String;
-    productImg: Attribute.Media;
-    productDes: Attribute.String;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::product.product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface PluginUploadFile extends Schema.CollectionType {
   collectionName: 'files';
   info: {
@@ -849,6 +814,214 @@ export interface PluginUsersPermissionsUser extends Schema.CollectionType {
   };
 }
 
+export interface ApiBolIVospolenieBolIVospolenie extends Schema.CollectionType {
+  collectionName: 'bol_i_vospolenies';
+  info: {
+    singularName: 'bol-i-vospolenie';
+    pluralName: 'bol-i-vospolenies';
+    displayName: '\u0411\u043E\u043B\u044C \u0438 \u0432\u043E\u0441\u043F\u043E\u043B\u0435\u043D\u0438\u0435';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::bol-i-vospolenie.bol-i-vospolenie',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::bol-i-vospolenie.bol-i-vospolenie',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiGenikologiyaIUrologiyaGenikologiyaIUrologiya
+  extends Schema.CollectionType {
+  collectionName: 'genikologiya_i_urologiyas';
+  info: {
+    singularName: 'genikologiya-i-urologiya';
+    pluralName: 'genikologiya-i-urologiyas';
+    displayName: '\u0413\u0435\u043D\u0438\u043A\u043E\u043B\u043E\u0433\u0438\u044F \u0438 \u0443\u0440\u043E\u043B\u043E\u0433\u0438\u044F';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::genikologiya-i-urologiya.genikologiya-i-urologiya',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::genikologiya-i-urologiya.genikologiya-i-urologiya',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiLechebnyeMaziLechebnyeMazi extends Schema.CollectionType {
+  collectionName: 'lechebnye_mazis';
+  info: {
+    singularName: 'lechebnye-mazi';
+    pluralName: 'lechebnye-mazis';
+    displayName: '\u043B\u0435\u0447\u0435\u0431\u043D\u044B\u0435 \u043C\u0430\u0437\u0438';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::lechebnye-mazi.lechebnye-mazi',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::lechebnye-mazi.lechebnye-mazi',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProductProduct extends Schema.CollectionType {
+  collectionName: 'products';
+  info: {
+    singularName: 'product';
+    pluralName: 'products';
+    displayName: '\u041B\u0435\u043A\u0430\u0440\u0441\u0442\u0432\u0430';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::product.product',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiProstudaNasmorkBolVGorleProstudaNasmorkBolVGorle
+  extends Schema.CollectionType {
+  collectionName: 'prostuda_nasmork_bol_v_gorles';
+  info: {
+    singularName: 'prostuda-nasmork-bol-v-gorle';
+    pluralName: 'prostuda-nasmork-bol-v-gorles';
+    displayName: '\u041F\u0440\u043E\u0441\u0442\u0443\u0434\u0430 , \u043D\u0430\u0441\u043C\u043E\u0440\u043A , \u0431\u043E\u043B\u044C \u0432 \u0433\u043E\u0440\u043B\u0435';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::prostuda-nasmork-bol-v-gorle.prostuda-nasmork-bol-v-gorle',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::prostuda-nasmork-bol-v-gorle.prostuda-nasmork-bol-v-gorle',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
+export interface ApiZheludokKishechnikZheludokKishechnik
+  extends Schema.CollectionType {
+  collectionName: 'zheludok_kishechniks';
+  info: {
+    singularName: 'zheludok-kishechnik';
+    pluralName: 'zheludok-kishechniks';
+    displayName: '\u0416\u0435\u043B\u0443\u0434\u043E\u043A , \u043A\u0438\u0448\u0435\u0447\u043D\u0438\u043A';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    productname: Attribute.String;
+    productBody: Attribute.Text;
+    productPrice: Attribute.String;
+    productImg: Attribute.Media;
+    productDes: Attribute.String;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::zheludok-kishechnik.zheludok-kishechnik',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::zheludok-kishechnik.zheludok-kishechnik',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -859,7 +1032,6 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::product.product': ApiProductProduct;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;
@@ -869,6 +1041,12 @@ declare module '@strapi/types' {
       'plugin::users-permissions.permission': PluginUsersPermissionsPermission;
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
+      'api::bol-i-vospolenie.bol-i-vospolenie': ApiBolIVospolenieBolIVospolenie;
+      'api::genikologiya-i-urologiya.genikologiya-i-urologiya': ApiGenikologiyaIUrologiyaGenikologiyaIUrologiya;
+      'api::lechebnye-mazi.lechebnye-mazi': ApiLechebnyeMaziLechebnyeMazi;
+      'api::product.product': ApiProductProduct;
+      'api::prostuda-nasmork-bol-v-gorle.prostuda-nasmork-bol-v-gorle': ApiProstudaNasmorkBolVGorleProstudaNasmorkBolVGorle;
+      'api::zheludok-kishechnik.zheludok-kishechnik': ApiZheludokKishechnikZheludokKishechnik;
     }
   }
 }
